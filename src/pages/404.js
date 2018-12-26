@@ -1,9 +1,8 @@
-import React from "react"
-import { Link } from "gatsby";
+import React from 'react'
+import Section from './../components/section'
 
 export default () => (
-  <div>
-    <Link to="/">Contact</Link>
+  <Section>
     <h1>404!</h1>
-  </div>
+  </Section>
 )

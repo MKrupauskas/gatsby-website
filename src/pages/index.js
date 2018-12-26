@@ -1,8 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+
+import Section from './../components/section'
 
 export default () => (
-  <div style={{ margin: "3rem auto", maxWidth: 600 }}>
+  <Section>
     <h1>Richard Hamming on Luck</h1>
     <div>
       <p>
@@ -25,6 +26,5 @@ export default () => (
       </blockquote>
     </div>
     <p>Posted April 09, 2011</p>
-    <Link to="/contact">Contact</Link>
-  </div>
+  </Section>
 )
