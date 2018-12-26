@@ -1,12 +1,20 @@
 module.exports = {
     siteMetadata: {
-        title: "Totality",
+        title: 'Totality',
     },
     plugins: [
         {
-            resolve: "gatsby-plugin-typography",
+            resolve: 'gatsby-source-filesystem',
             options: {
-                pathToConfigModule: "src/utils/typography.js",
+                name: 'src',
+                path: `${__dirname}/src/`,
+            },
+        },
+        'gatsby-transformer-remark',
+        {
+            resolve: 'gatsby-plugin-typography',
+            options: {
+                pathToConfigModule: 'src/utils/typography.js',
             },
         },
     ],
